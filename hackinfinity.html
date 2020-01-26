@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html>
+<title>Hack Infinity 2.0</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="apply-snippet.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Raleway", sans-serif;
+  }
+  table {
+    border-collapse: collapse;
+    width: 120%;
+  }
+  th,td {
+    text-align: left;
+    padding:15px;
+    
+  }
+  th{
+    background-color: #ccc7c7;
+    
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color:#d6cddf;
+  }
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: gray;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 16px;
+    width: 190px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+    
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  body,
+  html {
+    height: 100%;
+    line-height: 1.8;
+  }
+
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./images/img.png");
+    min-height: 100%;
+  }
+
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+
+  .sponsor-pic img {
+    max-height: 80px;
+    max-width: 100%;
+    margin: 10px;
+  }
+
+  .team-member {
+    min-width: 200px;
+    max-width: 250px;
+    margin: 10px;
+  }
+</style>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide">Hack Infinity '20</a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small">
+        <a href="index.html" class="w3-bar-item w3-button">Swadheenta '20</a>
+        <a href="#abouthack" class="w3-bar-item w3-button">Tracks</a>
+        <a href="#schedule" class="w3-bar-item w3-button"></i>Schedule</a>
+        <a href="#reg" class="w3-bar-item w3-button"></i>Registration</a>
+        <a href="#hi17" class="w3-bar-item w3-button">Hack Infinity 2017</a>
+                <a href="#sponsors" class="w3-bar-item w3-button"></i> Sponsors</a>
+
+        <a href="#faq" class="w3-bar-item w3-button"></i> FAQs</a>
+        <a href="#promo" class="w3-bar-item w3-button">Staggering stats</a>
+        <a href="#contact" class="w3-bar-item w3-button"></i>Reach out</a>
+
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+        onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Swadheenta '20</a>
+    <a href="#abouthack" onclick="w3_close()" class="w3-bar-item w3-button">Tracks</a>
+        <a href="#schedule" onclick="w3_close()" class="w3-bar-item w3-button">Schedule</a>
+    <a href="#reg" onclick="w3_close()" class="w3-bar-item w3-button">Registration</a>
+    <a href="#hi17" onclick="w3_close()" class="w3-bar-item w3-button">Hack Infinity 2017</a>
+        <a href="#sponsors" onclick="w3_close()" class="w3-bar-item w3-button">Sponsors</a>
+
+    <a href="#faq" onclick="w3_close()" class="w3-bar-item w3-button">FAQs</a>
+    <a href="#promo" onclick="w3_close()" class="w3-bar-item w3-button">Staggering stats</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Reach out</a>
+
+  </nav>
+
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-center w3-text-white" style="padding:48px; padding-top: 60px; text-align: center;">
+      <div style="margin-top: 20px;"><img src="/images/DCEI Logo.jpg" style="height: 80px;"><span
+          style="margin: 0 20px; font-weight: bold;"> and </span><img src="/images/da.png" style="height: 80px;"></div>
+      <h3 style="text-align: center;">Present</h3>
+      <span class="w3-jumbo w3-hide-small">Hack Infinity 2.0</span><br>
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Hack Infinity 2.0</span><br>
+      <span class="w3-large">Inspiring Infinite Ideas</span> <br>
+      <span class="w3-xlarge" style="font-weight: bold;">Co-Presented By</span>
+      <div style="margin-top: 20px;"><img src="/images/devfolio.png" style="height: 30px;"></div><br><br>
+      <span class="w3-large"><u>One of the largest student hackathons of India</u></span> <br>
+      <!--       <span class="w3-large"><u>Entrepreneurship Workshop</u></span> <br> -->
+
+      <span class="w3-large">7th-9th Feb '20 </span><br>
+      <span class="w3-large">@DA-IICT, Gandhinagar, Gujarat</span><br>
+      <div class="w3-xlarge w3-section">
+        <a href="https://www.facebook.com/daiict.dcei" target="_blank"> <i
+            class="fa fa-facebook-official w3-hover-opacity"></i></a>
+        <a href="https://instagram.com/dcei.daiict" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+
+        <a href="https://twitter.com/swadheentaDCEI" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+        <a href="https://www.linkedin.com/company/dcei" target="_blank"><i
+            class="fa fa-linkedin w3-hover-opacity"></i></a>
+      </div>
+
+    </div>
+    <!--<div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div> -->
+  </header>
+
+  <!-- About Hack Infinity 2.0 Section -->
+  <div class="w3-container" style="padding:128px; background-image: url('./images/Hack2.JPG'); 16px; color: white;" id="abouthack">
+    <h3 class="w3-center" style="color: white;">Themes</h3>
+    <!--     <p class="w3-center w3-large">Themes</p> -->
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">Data driven solutions</p>
+        <p>Data has taken the world by storm. Build solutions out of it.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">FinTech</p>
+        <p>Code your best, and bring out innovations in the field of finance.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">Blockchain</p>
+        <p>Blockchain aims to be as widespread as water, soon. Can it be better?</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">Climate Change</p>
+        <p>Want another version of Hack Infinity? Build something that saves the planet!!</p>
+      </div>
+    </div>
+
+  </div>
+  
+  
+  <!-- Schedule -->
+  <div id ="content4" class="container" style="padding-top:70px;padding-bottom:70px; background:#fff9f0;">
+    <section id="schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <img class="img-fluid" src="https://hackinout.co/img/title-schedule.png" alt="Schedule">
+                    <p class="mt-3">Here's a rough breakdown of the two days you'll be spending at Swadheenta.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mt-5">
+                    <div id="scheduleTable" class="mx-auto ">
+                        <table class="table table-1" style="position:relative;left:-25%;width:150%;">
+                            <thead>
+                                <tr>
+                                    <th colspan="2"><center>7 february 2020</center></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>5:30 PM </td>
+                                    <td>Inauguration of Swadheenta</td>
+                                </tr>
+                                <tr>
+                                    <td>9:00 PM </td>
+                                    <td>Company pitch 1</td>
+                                </tr>
+                                <tr>
+                                    <td>6:00 PM</td>
+                                    <td>
+                                      Get the brain cells unclogged
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                        <table class="table table-2" style="position:relative;left:-25%;width:150%;">
+                            <thead>
+                                <tr>
+                                    <th colspan="2"><center>8 february 2020</center></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>8:00 AM</td>
+                                    <td>Evaluation#1</td>
+                                </tr>
+                                <tr>
+                                    <td>11:00 AM</td>
+                                    <td>Company pitch 2</td>
+                                </tr>
+                                <tr>
+                                    <td>4:00 PM</td>
+                                    <td>Speaker Session#2</td>
+                                </tr>
+                                <tr>
+                                    <td>8:00 PM</td>
+                                    <td>Evaluation#2</td>
+                                </tr>
+                                <tr>
+                                    <td>Midnight</td>
+                                    <td>Boom Shakalaka</td>
+                                </tr>
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+    </div>
+    <div class="w3-container" style="background-image: url('./images/kkk.png');padding:128px 16px; text-align: center;" id="reg">
+      <h3 class="w3-center"style="color: white;">Register here</h3>
+
+       <div class="w3-center" style="display: flex; justify-content: center;"> <button id="devfolio-apply-now"><svg
+          class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 115.46 123.46"
+          style="height:24px;width:24px;margin-right:8px">
+          <path
+            d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" />
+          <path
+            d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z" />
+          </svg>Apply with Devfolio</button>
+
+        </div>
+
+       
+     </div>
+    
+
+    <!-- Prizes -->
+    <div class="w3-container" style="padding:128px 16px; text-align: center;" id="reg">
+      <h3 class="w3-center">Prizes</h3>
+
+      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">Best submission #1</span><br>
+          Worth Rs 1,80,000/-
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">Runners up</span><br>
+          Worth Rs 1,20,000/-
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">2nd Runners up</span><br>
+          Worth Rs 1,00,000/-
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">Best team with all women participants</span><br>
+          Worth Rs 80,000/-
+        </div>
+      </div>
+    </div>
+
+    <!--Glimpses -->
+    <div class="w3-container w3-light-grey" style="background-image: url('./images/kkk.png'); padding:128px 16px" id="hi17">
+      
+      <h3 class="w3-center" style="color: white;">Glimpses of Hack Infinity 2017</h3>
+      <!-- Sponsors -->  
+  
+    <div class="w3-quarter">
+     
+      <img src="/images/Hack1.JPG" style="height: 220px; max-height: 220px;"> </div>
+      <div class="w3-quarter">
+      <img src="/images/Hack2.JPG" style="height: 220px; max-height: 220px;">
+    </div>
+      <div class="w3-quarter">
+      <img src="/images/Hack3.JPG" style="height: 220px; max-height: 220px;">
+    </div>
+      <div class="w3-quarter">
+      <img src="/images/Hack4.JPG" style="height: 220px; max-height: 220px;">
+    </div><br><br>
+      <div class="w3-quarter">
+      <img src="/images/Hack5.JPG" style="height: 200px; max-height: 200px;">
+    </div>
+      <div class="w3-quarter">
+      <img src="/images/Hack6.JPG" style="height: 200px; max-height: 200px;">
+    </div>
+      <div class="w3-quarter">
+      <img src="/images/Hack7.JPG" style="height: 200px; max-height: 200px;">
+    </div>
+      <div class="w3-quarter">
+      <img src="/images/Hack8.JPG" style="height: 200px; max-height: 200px;">
+    </div>
+  </div>
+
+      </div>
+        
+     <!--Sponsor -->
+     <div class="w3-container w3-center " style="background-size: 100% 100%;padding: 16px" id="sponsors">
+        <h1 class="w3-center">Sponsors</h1><br>
+        <div class="sponsor-pics w3-row" >
+            <div class="sponsor-pic"style="float: left; margin-left: 100px;">
+                <a href="https://www.startupindia.gov.in/" target="_blank">
+                <img src="./images/startupindia.png" style="width:280px;height: 100px; max-height: 100px;">
+                <p>Event partner</p>
+              </a> 
+              </div>
+          <div class="sponsor-pic"style="float: left; margin-left: 100px;">
+            <a href="https://www.daiict.ac.in" target="_blank">
+            <img src="./images/da.png" style="position:relative;left:20%;height: 100px; max-height: 100px;">
+            <p style="position:relative;left:20%;height: 100px; max-height: 100px;">Venue Partner : DA-IICT, Gandhinagar</p>
+          </a> 
+          </div>
+    
+          <div class="sponsor-pic"style=" margin-right: 100px; ">
+    
+            <a href="https://devfolio.co" target="_blank">
+            <img src="./images/DevBlack2.png" style="position:relative;width:290px;height: 150%; margin-bottom: 50px; margin-top: 20px;left:5%;">
+                    <p style="position:relative;left:5%;">Platinum Sponsor : Devfolio</p>
+    
+            </a>
+          </div>
+          <hr>
+        <div class="sponsor-pics w3-row" >
+          <div class="sponsor-pic"style="float: left; margin-left: 200px; margin-bottom: none; margin-top: 65px;">
+            <a href="https://matic.network" target="_blank">
+            <img src="./images/matic.jpeg" style="height: 80px;">
+                            <p>Silver sponsor : Matic Network</p>
+    
+          </a>
+          </div>
+          <div class="sponsor-pic" style="  margin-top: 80px;">
+            <a href="https://crio.do" target="_blank" >
+            <img src="./images/Crio.png" style="height: 50px; ">
+                            <p>Learning and gift partner: Crio.Do</p>
+    
+          </a>
+          </div>
+        </div>
+        <hr>
+        <div class="sponsor-pics w3-row" >
+          <div class="sponsor-pic w3-col" >
+                  <div style="margin-top: : 100px;margin-right: 200px; margin-left: 100px; float: left;">
+    
+            <a href="https://scholifyme.com" target="_blank">
+            <img src="./images/Scholify.png"></a>
+          </div>
+                <div style=" margin-right:80px; position: relative; float: left;">
+    
+            <a href="https://codingblocks.com" target="_blank">
+            <img src="./images/codingblocks.png"></a>
+          </div>
+                          <div style=" margin-right:  100px;float: right;">
+    
+            <a href="https://ciie.co" target="_blank">
+            <img src="./images/ciie.png"></a>
+            </div>
+    
+          </div>
+            <br>
+    </div>
+    <br><br>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+                  <div class="sponsor-pic">
+    
+            <a href="https://www.wolfram.com/language/" target="_blank">
+            <img src="./images/wolfram.png"></a>
+          </div>
+                <div class="sponsor-pic">
+    
+            <a href="https://balsamiq.com" target="_blank">
+            <img src="./images/balsamiq.png"></a>
+          </div>
+                          <div class="sponsor-pic">
+    
+            <a href="https://rosenfeldmedia.com/" target="_blank">
+            <img src="./images/rosenfeld.png"></a>
+            </div>
+    
+          
+                  <div class="sponsor-pic">
+    
+            <a href="https://creative-tim.com" target="_blank">
+            <img src="./images/creativetim.png"></a>
+          </div>
+       
+    
+        </div>
+        <br><br>
+        <h1 class="w3-center">Past Sponsors</h1>
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+          <div class="sponsor-pic">
+            <img src="./images/mozilla.jpg">
+          </div>
+          <div class="sponsor-pic">
+            <img src="./images/google.png">
+          </div>
+          <div class="sponsor-pic">
+            <img src="./images/aframe.png">
+          </div>
+          <div class="sponsor-pic">
+            <img src="./images/hackerearth.png">
+          </div>
+        </div>
+        <br><br>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+          <div class="sponsor-pic">
+            <img src="./images/github.png">
+          </div>
+          <div class="sponsor-pic">
+            <img src="./images/directi.png">
+          </div>
+          <div class="sponsor-pic">
+            <img src="./images/amnex.png">
+          </div>
+        </div>
+    <!--       <div class="sponsor-pic">
+            <img src="/images/mlh.png">
+          </div> -->
+          
+        </div>
+      </div>
+        <div class="w3-container w3-light-grey" style="background-size: 100% 100%;padding:128px 16px" id="sponsor">
+          <!--     <div class="w3-row-padding">
+          <div class="w3-col m6"> -->
+          <h3><center>Why sponsor us</center></h3>
+         
+    
+          <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+            <div class="w3-quarter w3-section">
+              <span class="w3-xlarge">Interviews</span><br>
+              Chance to interview, and hire some of the best developers in the country.
+            </div>
+            <div class="w3-quarter w3-section">
+              <span class="w3-xlarge">Workshops</span><br>
+              Host sessions and workshops before, during and after the event, for the hackathon participants as well as
+              DAIICT students.
+            </div>
+            <div class="w3-quarter w3-section">
+              <span class="w3-xlarge">Products</span><br>
+              A chance to test your products among the most tech-versatile student developers you could find.
+            </div>
+            <div class="w3-quarter w3-section">
+              <span class="w3-xlarge">Guarenteed sign ups and downloads</span><br>
+              We guarentee pre-worked out numbers for mailing list subscriptions, account sign ups and app downloads.
+            </div>
+          </div>
+          
+    <!--       <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> <a href="https://drive.google.com/open?id=1DFsrttS-TXt8qtSTBbbkIuX1ZLsTc1LB" target="_blank">Download brochure</a></button></p> -->
+          <div class="w3-center" style="color: white; border: radius 10px;"><button class="button" style="vertical-align:middle; font-size:16px; width:110px; padding:.5%;" onclick=" window.open('https://drive.google.com/open?id=1DFsrttS-TXt8qtSTBbbkIuX1ZLsTc1LB','_blank')"><span>Brochure</span></button><br>
+          </div>
+          <div class="w3-center">
+          Interested? <a href="https://forms.gle/8SxejoTk34dmgk8BA" target="_blank">Let us know</a>
+        </div></div>
+
+
+
+     
+    
+  <!-- "Statistics" -->
+      <div class="w3-container w3-light-grey" style="padding:128px 16px" id="promo">
+  <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+     <h3 class="w3-center">Staggering stats</h3>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">Rs 1,75,000+</span>
+      <br>Total prizes
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">5000+</span>
+      <br>GitHub commits
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">3</span>
+      <br>Days of unhindered competition
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">180</span>
+      <br>Best brains of the country
+    </div>
+  </div>
+</div>
+
+
+<div id ="content6" class="container-fluid faqs" style="padding-top:70px;padding-bottom:70px;background:#feffff;">
+    <section id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h3 class="w3-center faqh" style="font-size:60px;">FAQs</h3>
+                    
+                    </div>
+            </div>
+            <div class="row mt-5" id="accordion">
+                <div class="col-lg-6 col-12">
+                    <div class="card my-3 point">
+                        <div class="card-header btn collapsed accor" id="faqOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Who can participate?
+                        </div>
+                        <div id="collapseOne" class="collapse accor" aria-labelledby="faqOne" data-parent="#accordion">
+                            <div class="card-body pt-2">Students presently enrolled at a recognised university, aged 16-28 years.</div>
+                        </div>
+                    </div>
+                    <div class="card my-3 point">
+                        <div class="card-header btn collapsed accor" id="faqTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Any hardware involvement?</div>
+                        <div id="collapseTwo" class="collapse accor" aria-labelledby="faqTwo" data-parent="#accordion">
+                            <div class="card-body pt-2">As of this date, none. We work on pure code.</div>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+                <div class="col-lg-6 col-12" style="font-size:20
+                px;">
+                    <div class="card my-3 point">
+                        <div class="card-header btn collapsed accor" id="faqEight" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">Travel Reimbursements</div>
+                        <div id="collapseEight" class="collapse accor" aria-labelledby="faqEight" data-parent="#accordion">
+                            <div class="card-body pt-2">Yes!!! Provided you submit all details, you will be reimbursed. Of course, there's a cap.</div>
+                        </div>
+                    </div>
+                    <div class="card my-3 point">
+                        <div class="card-header btn collapsed accor" id="faqNine" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">Do I have to pay anything?</div>
+                        <div id="collapseNine" class="collapse accor" aria-labelledby="faqNine" data-parent="#accordion">
+                            <div class="card-body pt-2">Na na na.... You just have to come and code. We take care of your food, travel, drinks, bathrooms(if you are into bathing at all).</div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6 col-12" style="position:relative;left:25%;top:-10px;">
+                    <div class="card my-3 point">
+                        <div class="card-header btn collapsed accor" id="faqthree" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+                            Team size
+                        </div>
+                        <div id="collapsethree" class="collapse accor" aria-labelledby="faqthree" data-parent="#accordion">
+                            <div class="card-body pt-2">Only for Hack Infinity 2.0 : Minimum: 1 Maximum : 5</div>
+                        </div>
+                    </div>
+                    
+                   
+                    
+                </div>
+            </div>
+            <center><div class="w3-center" id="hi2" style="position:relative;top:-12%;"><button class="button" style="vertical-align:middle; font-size:16px; width:240px;" onclick=" window.open('https://drive.google.com/open?id=1n-KVEy4ZI7KtdFatAZIlh3WfI0PUH2br','_blank')";><span>Participation Information</span></button></div></center>
+  
+            <div class="mx-auto text-center">
+                <p class="mt-5">Did we miss something?<a href="mailto:hackinfinity2.0@gmail.com" target="_blank">
+                    Let us know
+                </a></p>
+                <div class="contact-links"><a href="https://twitter.com/hackinoutco" target="_blank">
+                    
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+  
+  </div>
+
+</div>  <!-- Contact Section -->
+  <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    <h3 class="w3-center">CONTACT</h3>
+
+    <div class = "w3-center" style="margin-top:48px">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> DA-IICT, Gandhinagar, Gujarat</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> +91-86191 05598</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> hackinfinity2.0@gmail.com</p>
+      <!--       <p><a href="https://www.linkedin.com/company/dcei">LinkedIn</a></p><br>
+ -->
+      <br>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Home</a>
+    <div class="w3-xlarge w3-section">
+      <a href="https://www.facebook.com/daiict.dcei" target="_blank"> <i
+          class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://instagram.com/dcei.daiict" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+
+      <a href="https://twitter.com/swadheentaDCEI" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+      <a href="https://www.linkedin.com/company/dcei" target="_blank"><i
+          class="fa fa-linkedin w3-hover-opacity"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+  </script>
+  <span id="siteseal">
+    <script async type="text/javascript"
+      src="https://seal.godaddy.com/getSeal?sealID=6yE5q2ogL3vRSWNqLCsMuhoXlFi3tkxs9o6MRUz8OrfW41r8LLgUA0ETy9qe"></script>
+    </span>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let devfolioOptions = {
+        buttonSelector: '#devfolio-apply-now',
+        key: 'hackinfinity',
+      }
+      let script = document.createElement('script');
+      script.src = "https://apply.devfolio.co";
+      document.head.append(script);
+      script.onload = function () {
+        new Devfolio(devfolioOptions);
+      }
+      script.onerror = function () {
+        document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
+          window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
+        });
+      }
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

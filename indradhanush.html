@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+
+<html>
+
+<title>Indradhanush '20</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link rel="stylesheet" href="apply-snippet.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<style>
+
+  body,
+
+  h1,
+
+  h2,
+
+  h3,
+
+  h4,
+
+  h5,
+
+  h6 {
+
+    font-family: "Raleway", sans-serif
+
+  }
+  table {
+    border-collapse: collapse;
+    width: 120%;
+  }
+  th,td {
+    text-align: left;
+    padding:15px;
+    
+  }
+  th{
+    background-color: #ccc7c7;
+    
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color:#d6cddf;
+  }
+  .faqh{
+    font-size:50px;
+  }
+  
+  }
+  .faqs{
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    
+  }
+  .icon:hover{
+    transform: scale(1.1);
+    transition: .25s ease-in-out;
+  }
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: gray;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 16px;
+    width: 190px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+    
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .hove{
+    border-radius: 20px;
+    
+  }
+  .hov:hover{
+    transform: scale(1.02);
+    transition: .25s ease-in-out;
+  }
+
+  body,
+
+  html {
+
+    height: 100%;
+
+    line-height: 1.8;
+
+  }
+
+
+
+  /* Full height image header */
+
+  .bgimg-1 {
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-image: url("./images/img.png");
+
+    min-height: 100%;
+
+  }
+
+
+
+  .w3-bar .w3-button {
+
+    padding: 16px;
+
+  }
+
+
+
+  .sponsor-pic img {
+
+    max-height: 80px;
+
+    max-width: 100%;
+
+    margin: 10px;
+
+  }
+
+
+
+  .team-member {
+
+    min-width: 200px;
+
+    max-width: 250px;
+
+    margin: 10px;
+
+  }
+
+</style>
+
+
+
+<body>
+
+
+
+  <!-- Navbar (sit on top) -->
+
+  <div class="w3-top">
+
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+
+      <a href="#home" class="w3-bar-item w3-button w3-wide">Indradhanush '20</a>
+
+      <!-- Right-sided navbar links -->
+
+      <div class="w3-right w3-hide-small">
+
+       
+        <a href="index.html" class="w3-bar-item w3-button">Swadheenta '20</a>
+	      <a href="#aboutind" class="w3-bar-item w3-button">Modus Operandi</a>
+        <a href="#speaker" class="w3-bar-item w3-button">Speakers</a>
+        <a href="#schedule" class="w3-bar-item w3-button">Schedule</a>
+
+<!-- 	       <a href="#reg" class="w3-bar-item w3-button"><i class="fa fa-th"></i>Speakers</a> -->
+        <a href="#reg" class="w3-bar-item w3-button">Registration</a>
+
+        <a href="#prz" class="w3-bar-item w3-button">Prizes</a>
+
+        <a href="#team" class="w3-bar-item w3-button">FAQs</a>
+
+        <a href="#contact" class="w3-bar-item w3-button">Reach out</a>
+
+
+
+      </div>
+
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+
+        onclick="w3_open()">
+
+        <i class="fa fa-bars"></i>
+
+      </a>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+
+    style="display:none" id="mySidebar">
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Swadheenta'20</a>
+	  <a href="#aboutind" onclick="w3_close()" class="w3-bar-item w3-button">Structure</a>
+    <a href="#sponsor" onclick="w3_close()" class="w3-bar-item w3-button">Sponsors</a>
+    <a href="#schedule" onclick="w3_close()" class="w3-bar-item w3-button">Schedule</a>
+
+    <a href="#reg" onclick="w3_close()" class="w3-bar-item w3-button">Registration</a>
+
+<a href="#prz" onclick="w3_close()" class="w3-bar-item w3-button">Prizes</a>
+    <a href="#sponsor" onclick="w3_close()" class="w3-bar-item w3-button">FAQs</a>
+
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Reach out</a>
+
+
+
+  </nav>
+
+
+
+  <!-- Header with full-height image -->
+
+  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+
+    <div class="w3-display-center w3-text-white" style="padding:48px; padding-top: 60px; text-align: center;">
+
+      <div style="margin-top: 20px;"><img src="./images/DCEI Logo.jpg" style="height: 80px;"><span
+
+          style="margin: 0 20px; font-weight: bold;"> and </span><img src="./images/da.png" style="height: 80px;"></div>
+
+      <h3 style="text-align: center;">in association with</h3>
+      <div style="margin-top: 20px;"><img src="./images/startupindia.png" style="height: 80px;"><br>
+        <h3 style="text-align: center;">presents</h3>
+
+      <span class="w3-jumbo w3-hide-small">Indradhanush'20</span><br>
+
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Indradhanush '20</span><br>
+
+	    <span class="w3-large">as a part of</span> <br>
+	  
+	  <span class="w3-xlarge" style="font-weight: bold;">Swadheenta '20</span>
+
+     <br>
+      <span class="w3-large"><u>Business Hackathon</u></span> <br>
+
+       
+
+      <span class="w3-large">Feb 8-9, 2020 </span><br>
+
+      <span class="w3-large">@DA-IICT, Gandhinagar, Gujarat</span><br>
+
+      <div class="w3-xlarge w3-section">
+
+     <a href="https://www.facebook.com/daiict.dcei" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+
+      <a href = "https://instagram.com/dcei.daiict"target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+
+
+
+      <a href="https://twitter.com/swadheentaDCEI" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+
+      <a href="https://www.linkedin.com/company/dcei" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+    </div>
+
+      
+
+    </div>
+
+    
+
+  </header>
+
+  <div class="w3-container" style="background-color:#144f67; padding:100px 16px;color: white; background-size: 100% 100%; "; id="aboutind">
+  
+  <img src="./images/icon_indra.png"  style="width:270px;height:280px;float:left;margin-left:20px; margin-right:20px">
+   
+   <h3 class="w3-left" style="position:relative;left:25px;font-size:40px";>About Indradhanush</h3><br><br><br>
+   <p style="position:relative;left:25px;font-size:18px;">
+ 
+   A 16 hours business hackathon to be organized in association with startup india following are the features.
+   <ol style="position:relative;left:40px;">
+      <li>Team formation.</li>
+        <li>Mentor inspired workshops on-</li>
+        
+          <ul style="position:relative;left:30px;">
+            <li >Business model formation.</li>
+            <li>Investor planning</li>
+            <li>Networking</li>
+            <li>Brand Development</li>
+            
+   
+          </ul>
+          <li style="position:relative;left:22%;">Mock-pitching and proposal refinement</li>
+          <li style="position:relative;left:22%;">Final pitch</li>
+
+   </ol>
+   
+   <p style="position:relative;left:24%;">Attention : Startup enthusiasts have a chance to receive long term mentorship from the best venture capitalists, entrepreneur of the country.</p>
+   </div>
+  <div class="w3-container" style="background-color: black; color: white;padding:128px 16px" id="wep">
+
+    <h3 class="w3-center" style="color: white;">Women in Entrepreneurship Program</h3>
+<p align="center">
+    Indradhanush Entrepreneurship Workshop is being organized as a part of the Women in Entrepreneurship Program initiated by DCEI.<br> The WEP, by aid of various workshops, aims to promote and garner support for women entrepreneurs. </p>
+    <h3 align="center">Advisory Committee - WEP</h3>
+    <p align="center">Many of whom you may see at Indradhanush'20</p>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px; display: flex; flex-wrap: wrap; justify-content: center;">
+        <div class="w3-col team-member">
+          <div class="w3-card">
+            <img src="./images/wep/saurabh.jpeg" alt="dkp" style="width:100%">
+            <div class="w3-container">
+              <h3>Mr Saurabh Jain</h3>
+              <p>Vice President, PayTM</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="w3-col team-member">
+          <div class="w3-card">
+            <img src="./images/wep/sam.jpg" alt="Shivangi" style="width:100%">
+            <div class="w3-container">
+              <h3>Mr Sam Baisla</h3>
+              <p>CEO, Startup India</p>
+              </div>
+          </div>
+        </div>
+        <div class="w3-col team-member">
+          <div class="w3-card">
+            <img src="./images/wep/bhavesh.jpg" alt="Nikunj" style=" width:100%">
+            <div class="w3-container">
+              <h3>Mr Bhavesh Manglani</h3>
+              <p>CEO, Delhivery</p>
+             </div>
+          </div>
+        </div>
+        <div class="w3-col team-member">
+          <div class="w3-card">
+            <img src="./images/wep/durgesh.jpg" alt="Snap-Inc" style="width:100%">
+            <div class="w3-container">
+              <h3>Mr Durgesh Kaushik</h3>
+              <p>Head,India-Market, Snap-Inc</p>
+              </div>
+          </div>
+        </div>
+
+        
+      </div>
+      <div class="w3-row-padding w3-grayscale" style="margin-top:64px; display: flex; flex-wrap: wrap; justify-content: center;">
+        <div class="w3-col team-member">
+          <div class="w3-card">
+            <img src="./images/wep/shweta.jpg" alt="GreyAtom" style="width:100%">
+            <div class="w3-container">
+              <h3>Ms Shweta Doshi</h3>
+              <p>Co-Founder, GreyAtom</p>
+              </div>
+          </div>
+          
+        </div>
+
+         <div class="w3-col team-member">
+          <div class="w3-card">
+            <img src="./images/wep/usha.png" alt="Mike" style="width:100%">
+            <div class="w3-container">
+              <h3>Dr Usha Mehta</h3>
+              <p>Chairperson, IEEE WIE-Gujarat Section</p>
+              </div>
+          </div>
+        </div>
+        
+        <div class="w3-col team-member">
+          <div class="w3-card">
+            <img src="./images/wep/anupama.jpg" alt="Gridle" style="width:100%">
+            <div class="w3-container">
+              <h3>Ms Anupama Panchal</h3>
+              <p>CTO, Gridle</p>
+              </div>
+          </div>
+
+        </div>
+         
+      </div>
+
+
+
+  <!--About Indradhanush-->
+
+  <div class="w3-container" style="background-color: green; color: white;padding:128px 16px" id="aboutind">
+
+    <h3 class="w3-center" style="color: white;">Modus Operandi</h3>
+
+    <p class="w3-center w3-large" style="color: white;">Building an entrepreneur</p>
+
+    <div class="w3-row-padding w3-center" style="color: white; margin-top:64px">
+
+      <div class="w3-quarter">
+
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+
+        <p class="w3-large">Key note session</p>
+
+        <p>The need for startups today. Why starting up is an easy challenge</p>
+
+      </div>
+
+      <div class="w3-quarter">
+
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+
+        <p class="w3-large">Business model formation workshop</p>
+
+        <p>Stuff doesn't work? Doesn't exist?They're called business ideas.</p>
+
+      </div>
+
+      <div class="w3-quarter">
+
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+
+        <p class="w3-large">Investor pitch session</p>
+
+        <p>Defining your company in 5 minutes for a million dollars</p>
+
+      </div>
+
+      <div class="w3-quarter">
+
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+
+        <p class="w3-large">Marketing</p>
+
+        <p>Talking the correct way</p>
+
+      </div>
+      </div>
+
+      <div class="w3-center">
+
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+
+        <p class="w3-large">Pitch session</p>
+
+        <p>Present your idea, make a company, and take our prizes!!</p>
+
+      </div>
+
+    </div>
+
+
+    <div class="w3-container" style="background-color:#000930; padding:100px 16px;color: white; background-size: 100% 100%;"; id="hack">
+
+        <img src="./images/startupindia.png"  style="width:380px;height:150px;float:left;margin-left:0px; margin-right:20px">
+       
+        <h3 class="w3-left" style="font-size:40px;">About StartupIndia</h3><br><br><br>
+       
+        <p style="font-size:16px;">
+       
+        The aim of Startup India foundation is to have students to develop entrepreneurial mindset providing them with necessary mentoring and support, as an attemt to imbibe startup culture. 
+             </p>
+        <br> 
+        
+                 
+       
+       </div>
+       
+     </div>
+   </div>
+  
+  <!-- Schedule -->
+
+  <div id ="content4" class="container" style="padding-top:70px;padding-bottom:70px; background:#fff9f0;">
+    <section id="schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <img class="img-fluid" src="https://hackinout.co/img/title-schedule.png" alt="Schedule">
+                    <p class="mt-3">Here's a rough breakdown of the two days you'll be spending at indranush.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mt-5">
+                    <div id="scheduleTable" class="mx-auto ">
+                        <table class="table table-1" style="position:relative;left:-25%;width:150%;">
+                            <thead>
+                                <tr>
+                                    <th colspan="2"><center>9 february 2020</center></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>9:00 AM </td>
+                                    <td>Indradhanush begins</td>
+                                </tr>
+                                <tr>
+                                    <td>9:30 AM</td>
+                                    <td>Business Model formation</td>
+                                </tr>
+                                <tr>
+                                    <td>11:00 AM</td>
+                                    <td>
+                                      Investor pitching
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <td>Noon </td>
+                                  <td>Why networking works</td>
+                              </tr>
+                              <tr>
+                                  <td>1 PM </td>
+                                  <td>Lunch</td>
+                              </tr>
+                              <tr>
+                                  <td>2 PM</td>
+                                  <td>
+                                    Theme presentation and team formation
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td>4 PM</td>
+                                <td>Pitch session</td>
+                            </tr>
+                            <tr>
+                                <td>5 PM</td>
+                                <td>Panel discussion</td>
+                            </tr>
+                            <tr>
+                                <td>6 PM</td>
+                                <td>
+                                  Conclusion of Swadheenta
+                                </td>
+                            </tr>
+                                
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+    </div>
+    </div>
+
+</div>
+	    </div>
+      <div class="w3-container" style="position:relative; height:80%;background-size: 100% 100%; background:rgb(93, 136, 100)" id="speaker">
+          <!--     <div class="w3-row-padding">
+          <div class="w3-col m6"> -->
+          <h3 style="position: relative;top:30px;"><center>Speakers</center></h3>
+         
+      
+          <div class="w3-row-padding w3-grayscale" style="margin-top:64px; display: flex; flex-wrap: wrap; justify-content: center;">
+              <div class="w3-col team-member hov">
+                  <div class="w3-card hove">
+                <img src="./images/wep/sam.jpg" alt="dkp" style="width:100%">
+                <div class="w3-container">
+                  <h3 style="position:relative;top:10px;">Mr Sam Baish</h3>
+                  <p>CEO, StartupIndia</p>
+                  </div>
+              </div>
+            </div>
+            <div class="w3-col team-member hov">
+                <div class="w3-card hove">
+                <img src="./images/wep/dhruvam.jpg" alt="Shivangi" style="width:100%">
+                <div class="w3-container">
+                  <h3 style="position:relative;top:10px;">Mr Dhruvam Thaker</h3>
+                  <p>CEO, The Smart Taxi</p>
+                  
+      <!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
+                </div>
+              </div>
+            </div>
+            <div class="w3-col team-member hov">
+                <div class="w3-card hove">
+                <img src="./images/wep/mayank.jpg" alt="mayank" style=" width:100%">
+                <div class="w3-container">
+                  <h3 style="position:relative;top:10px;">Mr Mayank Pareek</h3>
+                  <p>CEO, Scholify </p>
+                 
+      <!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          
+      
+          </div>
+        
+    
+    
+
+
+
+    <div class="w3-container" style="position:relative;background-color: black;color: white; padding:128px 16px; text-align: center;" id="reg">
+
+      <h3 class="w3-center" style="color:white;">Register here</h3>
+
+
+
+      <div class="w3-row-padding w3-center" style="color: white;margin-top:64px">
+
+
+        </div>
+
+        <div class="w3-center">
+
+          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center icon"></i>
+
+          <p class="w3-large">From your idea, to a business.</p>
+		<div class="w3-center" id="hi2"><button class="button" style="position:relative;top:10px;vertical-align:middle; width:11%; font-size:16px;padding:.5%;" onclick="window.open('https://skillenza.com/challenge/indradhanush','_blank');"><span>Register here</span></button></div>
+<br>
+
+<!--           <p><a href="https://forms.gle/fvmBsBcNWVGH4i1a6">Register</a></p> -->
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+    <!-- Prizes -->
+
+    <div class="w3-container" style="background-image: url('./images/BN2.jpg');padding:128px 16px; text-align: center;" id="prz">
+
+      <h3 class="w3-center" style="color: white;">Prizes for pitch session</h3>
+
+
+
+      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+
+        <div class="w3-quarter w3-section">
+
+          <span class="w3-xlarge">Best pitch</span><br>
+
+          Worth Rs 10,000/- 
+
+        </div>
+
+        <div class="w3-quarter w3-section">
+
+          <span class="w3-xlarge">Most socially directed idea</span><br>
+
+          Worth Rs 8,000/-
+
+        </div>
+
+        <div class="w3-quarter w3-section">
+
+          <span class="w3-xlarge">Most robust model</span><br>
+
+          Worth Rs 5,000/-
+
+        </div>
+
+         <div class="w3-quarter w3-section">
+
+          <span class="w3-xlarge">Best team with all women participants</span><br>
+
+          Wprth Rs 3,000/-
+
+        </div> 
+
+      </div>
+
+    </div>
+
+
+  <!-- Promo Section "Statistics" -->
+
+  <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64" style="background-color: black; color: white;">
+ <h3 class="w3-center" style="color: white;">Staggering stats</h3>
+    <div class="w3-quarter">
+
+      <span class="w3-xxlarge">Rs 10,000+</span>
+
+      <br>Total prizes
+
+    </div>
+
+    <div class="w3-quarter">
+
+      <span class="w3-xxlarge">10+</span>
+
+      <br>Entrepreneur experts
+
+    </div>
+
+    <div class="w3-quarter">
+
+      <span class="w3-xxlarge">9</span>
+
+      <br>Hours of brainstorming with the best
+
+    </div>
+
+    <div class="w3-quarter">
+
+      <span class="w3-xxlarge">100</span>
+
+      <br>Startup enthusiasts, to network with
+
+    </div>
+
+  </div>
+
+  <div id ="content6" class="container-fluid faqs" style="padding-top:70px;padding-bottom:70px;background:#feffff;">
+      <section id="faq">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-10 mx-auto text-center">
+                      <h3 class="w3-center faqh" style="color:black;font-size:60px;" >FAQs</h3>
+                      
+                       </div>
+              </div>
+              <div class="row mt-5" id="accordion">
+                  <div class="col-lg-6 col-12">
+                      <div class="card my-3 point" >
+                          <div class="card-header btn collapsed accor" id="faqOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Who can apply?
+                          </div>
+                          <div id="collapseOne" class="collapse accor" aria-labelledby="faqOne" data-parent="#accordion">
+                              <div class="card-body pt-2"style="color:black;">Students presently enrolled at a recognised university, aged 16-28 years.</div>
+                          </div>
+                      </div>
+                      <div class="card my-3 point">
+                          <div class="card-header btn collapsed accor" id="faqTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Registration fees?</div>
+                          <div id="collapseTwo" class="collapse accor" aria-labelledby="faqTwo" data-parent="#accordion">
+                              <div class="card-body pt-2"style="color:black;">Nada!! Learn and make, and that's our reward.</div>
+                          </div>
+                      </div>
+                     
+                      
+                  </div>
+                  <div class="col-lg-6 col-12" style="font-size:20
+                  px;">
+                      <div class="card my-3 point">
+                          <div class="card-header btn collapsed accor" id="faqEight" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">Travel Reimbursements</div>
+                          <div id="collapseEight" class="collapse accor" aria-labelledby="faqEight" data-parent="#accordion">
+                              <div class="card-body pt-2"style="color:black;">Nope, sorry.</div>
+                          </div>
+                      </div>
+                      <div class="card my-3 point">
+                          <div class="card-header btn collapsed accor" id="faqNine" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">Will I have a chance to participate?</div>
+                          <div id="collapseNine" class="collapse accor" aria-labelledby="faqNine" data-parent="#accordion">
+                              <div class="card-body pt-2"style="color:black;">Yepsss! During the pitch session, anyone with an idea can come forward and present it in front of a panel of experts, get mentoring and support.
+                                </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="mx-auto text-center">
+                  <p class="mt-5"style="color:black;">Something we missed?<a href="mailto:hackinfinity2.0@gmail.com" target="_blank">
+                      Let us know
+                  </a></p>
+                  <div class="contact-links"><a href="https://twitter.com/hackinoutco" target="_blank">
+                      
+                      
+                  </div>
+              </div>
+          </div>
+      </section>
+    
+    </div>
+    
+
+
+
+
+
+  <!--<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="sponsor">
+
+    <div class="w3-row-padding" style="width: 100%;">
+
+        <h1 class="w3-center">FAQs</h1>
+
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+
+          <div class="w3-quarter w3-section">
+
+            <span class="w3-xlarge">Who can apply</span><br>
+
+            Students presently enrolled at a recognised university, aged 16-28 years.
+
+          </div>
+
+          <div class="w3-quarter w3-section">
+
+            <span class="w3-xlarge">Registration fees?</span><br>
+
+            Nada!! Learn and make, and that's our reward.
+
+          </div>
+
+          <div class="w3-quarter w3-section">
+
+            <span class="w3-xlarge">Travel Reimbursements</span><br>
+
+            Yes!!! Provided you submit all details, you will be reimbursed. Of course, there's a cap. Also 
+
+          </div>
+
+          <div class="w3-quarter w3-section">
+
+            <span class="w3-xlarge">Will I have a chance to participate?</span><br>
+
+            Yepsss! During the pitch session, anyone with an idea can come forward and present it in front of a panel of experts, get mentoring and support.
+
+          </div>
+
+        </div>
+
+      <div class="w3-center">
+
+        <p>
+
+        Something we missed? Let us know on hackinfinity2.0@gmail.com</p></div>
+
+        
+
+    </div>
+
+  </div>-->
+
+
+
+  <!-- Contact Section -->
+
+  <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+
+    <h3 class="w3-center">CONTACT</h3>
+
+
+
+    <div style="margin-top:48px" class="w3-center">
+
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> DA-IICT, Gandhinagar, Gujarat</p>
+
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> +91-9426893264</p>
+
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> hackinfinity2.0@gmail.com</p>
+
+<!--       <p><a href="https://www.linkedin.com/company/dcei">LinkedIn</a></p><br>
+
+ -->
+
+      <br>
+
+
+
+    </div>
+
+  </div>
+
+
+
+  <!-- Footer -->
+
+  <footer class="w3-center w3-black w3-padding-64">
+
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Home</a>
+
+    <div class="w3-xlarge w3-section">
+
+     <a href="https://www.facebook.com/daiict.dcei" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+
+      <a href = "https://instagram.com/dcei.daiict"target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+
+
+
+      <a href="https://twitter.com/swadheentaDCEI" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+
+      <a href="https://www.linkedin.com/company/dcei" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
+    </div>
+
+  </footer>
+
+  
+
+
+  <script>
+
+    // Modal Image Gallery
+
+    function onClick(element) {
+
+      document.getElementById("img01").src = element.src;
+
+      document.getElementById("modal01").style.display = "block";
+
+      var captionText = document.getElementById("caption");
+
+      captionText.innerHTML = element.alt;
+
+    }
+
+
+
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+
+    var mySidebar = document.getElementById("mySidebar");
+
+
+
+    function w3_open() {
+
+      if (mySidebar.style.display === 'block') {
+
+        mySidebar.style.display = 'none';
+
+      } else {
+
+        mySidebar.style.display = 'block';
+
+      }
+
+    }
+
+
+
+    // Close the sidebar with the close button
+
+    function w3_close() {
+
+      mySidebar.style.display = "none";
+
+    }
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=6yE5q2ogL3vRSWNqLCsMuhoXlFi3tkxs9o6MRUz8OrfW41r8LLgUA0ETy9qe"></script></span>
+
+
+
+  </body>
+
+
+
+</html>

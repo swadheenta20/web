@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<title>BLOG</title>
+<head>
+  <link rel="shortcut icon" type="image/png" href="image/swadheenta-black1.jpg">
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+.bgimg-1 {
+    
+  background-color: black;
+  background-position: center;
+  background-size: 100% 100%;
+  
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+/* Create a Parallax Effect */
+.bgimg-2, .bgimg-3{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('/w3images/parallax1.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+
+    <body>
+
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+          <div class="w3-bar w3-white w3-card" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-wide">Swadheenta '20</a>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+              <a href="hackinfinity.html" class="w3-bar-item w3-button"> Hack Infinity 2.0</a>
+              <a href="indradhanush.html " class="w3-bar-item w3-button">Indradhanush</a>
+              
+      <!--         <a href="#schedule" class="w3-bar-item w3-button"><i class="fa fa-th"></i>Schedule</a>
+              <a href="#reg" class="w3-bar-item w3-button"><i class="fa fa-th"></i>Registration</a> -->
+              <a href="#partner" class="w3-bar-item w3-button"> Partners Speaks</a>
+              <a href="#we" class="w3-bar-item w3-button">We speaks</a>
+              <a href="#contact" class="w3-bar-item w3-button"> Reach out to us</a>
+      
+            </div>
+            <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+      
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+              onclick="w3_open()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+        </div>
+      
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+          style="display:none;position:relative;right:150px;top:20px;" id="ySidmebar">
+          <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+          <a href="hackinfinity.html" onclick="w3_close()" class="w3-bar-item w3-button">Hack Infinity 2.0</a>
+          <a href="indradhanush.html" onclick="w3_close()" class="w3-bar-item w3-button">Indradhanush</a>
+          <a href="#speaker" onclick="w3_close()" class="w3-bar-item w3-button">Speakers</a>
+      <!--     <a href="#schedule" onclick="w3_close()" class="w3-bar-item w3-button">Schedule</a>
+          <a href="#reg" onclick="w3_close()" class="w3-bar-item w3-button">Registration</a> -->
+          
+          <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Team</a>
+          <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Reach out</a>
+      
+        </nav>
+      
+        <!-- Header with full-height image -->
+        <header class="bgimg-1 w3-display-container " id="home">
+          <div class="w3-display-center w3-text-white" style="padding:100px; padding-top: 60px; text-align: center; background-image: url('./images/background3.png'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+            <div style="margin-top: 20px;"><img src="./images/DCEI Logo.jpg" style="height: 80px;"><span
+                style="margin: 0 20px; font-weight: bold;"> and </span><img src="./images/da.png" style="height: 80px;"></div>
+            <h3 style="text-align: center;">Present</h3>
+            <div style="margin-top: 10px;"><img src="./images/sd_logo.png" style="height: 120px;"></div>
+            <span class="w3-jumbo w3-hide-small">Swadheenta '20</span><br>
+            <span class="w3-xxlarge w3-hide-large w3-hide-medium">Swadheenta '20</span>
+            <span class="w3-large"><i>Inspiring Infinite Ideas</i></span> <br><br>
+            <span class="w3-large">Our hashtag movement: <a href="#hashtag"><i>#HackSwadheen</i></a></span> <br><br>
+           
+            <span class="w3-large"><u>Hackathon</u></span> <br>
+            <span class="w3-large"><u>Entrepreneurship Workshop</u></span> <br>
+             
+            <span class="w3-large">7th-9th Feb '20 </span><br>
+            <span class="w3-large">@DA-IICT, Gandhinagar, Gujarat</span><br>
+            <div class="w3-xlarge w3-section">
+           <a href="https://www.facebook.com/daiict.dcei" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href = "https://instagram.com/dcei.daiict"target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      
+            <a href="https://twitter.com/swadheentaDCEI" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://www.linkedin.com/company/dcei" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+          </div>
+            
+          </div>
+          <!--<div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div> -->
+        </header>
+      <!-- First Parallax Image with Logo Text -->
+
+
+<!-- Container (About Section) -->
+<div class="w3-container" style="background-color:#14411c; padding:100px 16px;color: white; background-size: 100% 100%;" id="partner">
+    
+   
+    
+  
+    <h3 class="w3-left" style="font-size:40px;position:relative;left:10%;">Partners Speaks</h3><br><br><br>
+
+    <p style="font-size:16px;">
+  
+   <!--One of India's largest student hackathons, Hack Infinity 2.0 presents pocket-watering prizes, an undeniable thrill and a huge knowledge base.
+    Hack Infinity 2.0 gains its inspiration from Hack Infinity 2017, which was a grand success. A software only hackathon, Hack Infinity 2.0 brings together developers to compete on
+    some of the most industry relevant topics of today. --></p>
+    
+</div>
+
+ 
+</div>
+   <div class="w3-container" style="background-color:rgb(238, 157, 157); padding:100px 16px;color: white; background-size: 100% 100%;"; id="we">
+   
+    
+	
+    <h3 class="w3-left" style="font-size:40px;position:relative;left:10%;">We speak</h3><br><br><br>
+
+    <p style="font-size:16px;position:relative;left:10%;width:85%;">
+	
+        Some people find their passion in coding and programming. Some people like to be the boss of their own. Some people love creating and some love to think practically and feasibly. Some people have brains filled with ideas that they just cannot put to sleep!  If you think you're able to relate to any of these, you've come to the right place. Presenting Swadheenta, an all around event. A hackathon and a business hackathon! Innovation at the tip of your fingers, creation on your mind, here's a treat you'll not be able to deny.
+
+        A hackathon is a sprint-like event in which computer programmers and software developers collaborate and aim to prepare a functional software by the end of the stipulated time period.
+        A business hackathon is, well, basically a hackathon but here, participants work on distinct business problems and provide feasible and plausible solutions to those.
+        
+        Hackathons provide a space for participants to grow their field of learning, expand their networks and advance in problems they are interested in. They, in turn, bring about brilliant and modern solutions to modern problems. They help participants develop problem solving skills and collaboration and networking skills.
+        A business hackathon would lead to newer innovations in business models and participants will begin to analyse problems from a wide array of aspects. Their thinking will no longer be rectilinear, but rather, become three-dimensional.
+        
+        DCEI presents Hack Infinity 2.0, a 36-hr long hackathon and Indhradhanush, a 36-hr long business hackathon. The first edition of Hack Infinity took place in 2017 and it was a booming success. This time, we're back with something bigger and better!
+        
+         </p>
+    <br> 
+    
+             
+ 
+</div>
+
+
+
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<div class="w3-container w3-light-grey" style="background-image: url('./images/neon.jpeg');background-size: 100% 100%;padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+
+  <div class="w3-center" style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> DA-IICT, Gandhinagar, Gujarat</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> +91-9426893264</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> hackinfinity2.0@gmail.com</p>
+<!--       <p><a href="https://www.linkedin.com/company/dcei">LinkedIn</a></p><br>
+-->
+    <br>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey" style="border-radius:5px;"><i class="fa fa-arrow-up w3-margin-right"></i>Home</a>
+  <div class="w3-xlarge w3-section">
+   <a href="https://www.facebook.com/daiict.dcei" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href = "https://instagram.com/dcei.daiict"target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+
+    <a href="https://twitter.com/swadheentaDCEI" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/company/dcei" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div> 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
